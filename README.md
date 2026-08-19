@@ -8,19 +8,14 @@ A simple **ATM Simulator** built using Python. This beginner-friendly project al
 * 💰 Check Account Balance
 * 💸 Withdraw Money
 * 💵 Deposit Money
+* 🔄 Change PIN
 * ❌ Invalid PIN Handling
 * ⚠️ Insufficient Balance Check
-* ⚠️ Invalid Menu Choice Handling
+* 🔒 PIN Confirmation when changing PIN
 
 ## 🛠️ Technologies Used
 
 * Python 3
-* `input()`
-* `print()`
-* `if`, `elif`, `else`
-* Comparison operators
-* Arithmetic operators
-* f-strings
 
 ## 📂 Project Structure
 
@@ -50,65 +45,57 @@ Enter your PIN: 123
 
 Welcome to your account
 
-________ What would you like to do? ________
-
 1. Check balance
 2. Withdraw
 3. Deposit
+4. Change PIN
 
-Enter your choice: 1
+Enter your choice: 4
 
-Your balance is: 1000
+Enter your new PIN: 456
+Confirm your new PIN: 456
+
+PIN changed successfully!
 ```
 
 ## 📖 How It Works
 
-1. User enters the PIN.
+1. User enters their PIN.
 2. The program verifies the PIN.
 3. If the PIN is correct, an ATM menu is displayed.
-4. The user selects an operation:
+4. The user can:
 
-   * Check balance
+   * Check their balance
    * Withdraw money
    * Deposit money
-5. For withdrawals, the program checks whether sufficient funds are available.
-6. The balance is updated after a successful transaction.
-7. The program displays an appropriate message for invalid choices or insufficient funds.
+   * Change their PIN
+5. When changing the PIN, the user must enter and confirm the new PIN.
+6. If both PINs match, the PIN is changed.
+7. The balance is updated after withdrawals and deposits.
 
 ## 🎯 Learning Objectives
 
 This project helps beginners practice:
 
 * Variables
-* User input using `input()`
-* Output using `print()`
-* `int` data type
-* Conditional statements (`if`, `elif`, `else`)
-* Comparison operators
-* Arithmetic operators
-* Assignment operators (`+=`, `-=`)
-* f-strings
-* Nested conditional statements
-* Basic decision-making logic
-* Console-based programming
+* User Input
+* Conditional Statements (`if`, `elif`, `else`)
+* Basic Arithmetic
+* Comparison Operators
+* Updating Variables
+* PIN Validation
+* Console-based Programs
 
 ## 🔮 Future Improvements
 
-* Add a `while` loop for multiple transactions
-* Add an Exit option
-* Add input validation
-* Add a retry limit for incorrect PIN attempts
-* Add a Change PIN feature
-* Add multiple user accounts
-* Add transaction history
-* Add receipt generation
-* Store account data using files
-* Add database support
-* Use functions to organize the program
-* Build a graphical user interface (GUI)
+* Multiple user accounts
+* Transaction history
+* Receipt generation
+* Data storage using files or databases
+* Retry limit for incorrect PIN
+* Better menu using loops
+* Permanent PIN storage
 
 ## 👨‍💻 Author
 
 **Umair Naseer**
-
-BSCS Student | Learning C++ & Python
