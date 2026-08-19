@@ -11,6 +11,7 @@ if pin == correct_pin:
     print("1. Check balance")
     print("2. Withdraw")
     print("3. Deposit")
+    print("4. Change PIN")
 
     choice = int(input("Enter your choice: "))
 
@@ -31,6 +32,16 @@ if pin == correct_pin:
 
         balance += deposit_amount
         print(f"Deposit successful! New balance: {balance}")
+
+    elif choice == 4:
+        new_pin = int(input("Enter your new PIN: "))
+        confirm_pin = int(input("Confirm your new PIN: "))
+
+        if new_pin == confirm_pin:
+            correct_pin = new_pin
+            print("PIN changed successfully!")
+        else:
+            print("PINs do not match!")
 
     else:
         print("Invalid choice! Please try again.")
